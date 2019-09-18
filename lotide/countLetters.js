@@ -9,14 +9,14 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(str) {
   console.log(str);
   const total = {};
-  let modifedStr = str.replace(/\s+/g, '');
-  console.log(modifedStr);
+  let modifiedStr = str.replace(/\s+/g, '');
+  console.log(modifiedStr);
 
-  for (x = 0; x < modifedStr.length; x++) {
-    if (!total [modifedStr[x]]) {
-      total [modifedStr[x]] = 1;
+  for (x = 0; x < modifiedStr.length; x++) {
+    if (!total [modifiedStr[x]]) {
+      total [modifiedStr[x]] = 1;
     } else {
-      total [modifedStr[x]]++;
+      total [modifiedStr[x]]++;
     }
   }
   return total;
